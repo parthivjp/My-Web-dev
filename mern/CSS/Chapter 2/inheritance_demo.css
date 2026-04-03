@@ -1,0 +1,9 @@
+div{
+    background-color:gray;
+}
+form{
+    background-color:coral;
+}
+input,button{
+    background-color:inherit;
+}

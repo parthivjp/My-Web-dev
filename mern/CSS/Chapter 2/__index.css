@@ -1,0 +1,104 @@
+*{                                            /*  universal selector   */
+    font-family:'Courier New';
+    /* background-color:cyan; */
+}
+/* h3{
+    color:lightblue;
+}                                                   Element selector*/
+h1,h3{
+    color:#b92b27;
+}
+h3:hover{ /*pseudo class*/
+    text-decoration:none;
+} 
+#login{                                           /*Id selecctor */
+    background-color:white;
+    color:black;
+}
+ #login:hover{               /*pseudo hover class*/
+    background-color:black;
+    color:white;
+}
+#login:active{/*pseudo active class*/
+    background-color:pink;
+}
+#signup{
+    background-color: red;
+    color: aliceblue;
+}
+#signup:hover{ /*pseudo hover class*/
+    background-color: white;
+    color:red;
+}
+#signup:active{/*pseudo active class*/
+    background-color:pink;
+}
+.buttonstyle{                                          
+    background-color: rgb(37, 36, 36);
+    color:aliceblue;
+}
+/* p a{
+    background-color:white;
+    color:aqua;
+} */
+.new a{             /*class selecctor */ 
+    background-color:white;
+    color:aqua;
+}
+nav ul li a{                            /*decedent selecctor */ 
+    color: #b92b27;
+}
+p+h3{                                   /*sibling selecctor */ 
+    text-decoration:underline;
+}
+.buttonstyle + button{
+    background-color:skyblue; 
+    color:brown;
+}
+/* div > input{                              child selecctor 
+    background-color:lightcoral;
+}  */
+input[type="text"]{
+    color: darkred;
+}                                           /*Attribute selecctor */ 
+input[type="password"]{
+    color:rgb(0, 255, 255);
+}
+input[type]{
+    background-color:lightslategray;
+}
+/* div[id="myid"]{
+    color:green;
+} */
+#myid p{
+    color:green;
+}
+p:active{
+    font-weight: bold;
+    color:green;
+}
+input[type="radio"]:checked + label{
+    color:blue;
+}
+div:nth-of-type(2n){
+    background-color:orange;
+}
+h1::first-letter{       /* pseudo first-letter element */
+    color:gray;
+}
+p::first-line{/* pseudo first-line element */
+    color:blue;
+}
+P::selection{
+    background-color:red;/* pseudo first-line element */
+}
+
+h5{                 /* id > class >element */
+    color:pink;
+}
+#greet{
+    color:yellow;
+}
+.myc{
+    color:red;
+}

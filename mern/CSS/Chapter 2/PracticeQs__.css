@@ -1,0 +1,37 @@
+*{
+    font-family: 'Courier New';
+}
+h1{
+    color: #1b74e4 !important;
+}
+#searchbtn{
+    color:white;
+    background-color: black;
+}
+/* .userbtn{
+    background-color: aqua;
+    color: black;
+}  */
+#login, #register{
+    background-color: aqua;
+    color: black;
+}
+
+/* div p{
+    background-color:black;
+}
+.para{
+    background-color:blue;
+}
+p{
+    background-color:green;
+} */
+div.greetdiv .greet{
+    color:green;
+}
+.greetdiv p.greet{
+    color:blue;
+}
+.greetdiv .greet {
+    color:red;
+}

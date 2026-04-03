@@ -1,0 +1,79 @@
+/* body{
+   
+    margin:200px 500px;
+} */
+div{
+    height: 100px;
+    width: 500px;
+    text-align: center;
+    background-color: aqua;
+    margin: 150px auto;
+    box-shadow: 10px 10px 20px  lime;
+}
+/* div:nth-of-type(2n){
+    background-color: orange;
+}
+div:nth-of-type(3n){
+    background-color: brown;
+}
+/* transform */
+/*#one{
+    transition: transform 2s ease 1s;
+}
+#two{
+    transition: transform 2s ease 1s;
+}
+#three{
+    transition: transform 2s ease 1s;
+}
+#four{
+    transition: transform 2s ease 1s;
+}
+#five{
+    transition: transform 2s ease 1s;
+}
+#six{
+    transition: transform 2s ease 1s;
+}
+#seven{
+    transition: transform 2s ease 1s;
+}
+#eight{
+    transition: transform 2s ease 1s;
+}
+#nine{
+    transition: transform 2s ease 1s;
+}
+#ten{
+    transition: transform 2s ease 1s;
+}
+
+#eleven{
+    transition: transform 2s ease 1s;
+}
+#one:hover{
+    background-color:blue;
+    transform: rotate(45deg);
+}
+
+#two:hover{
+    background-color:red;
+    transform: scale(0.5);
+}
+#three:hover{
+    background-color:cornflowerblue;
+    transform: scale(10, 0.5)  x, y
+}
+#four:hover{
+    background-color: red;
+    transform: translate(100px,-50px); x, y
+}
+#five:hover{
+    background-color:blue;
+    transform: skew(80deg);    
+}
+#six:hover{
+    background-color:blue;
+    transform: rotate(360deg) scale(2) translateY(100%);
+    
+} */
