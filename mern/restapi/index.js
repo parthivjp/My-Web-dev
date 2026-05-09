@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path"); // Access folder via path from any where
+const {v4 :uuidv4} =require('uuid');
 
 const port = 8080;
 
@@ -13,12 +14,15 @@ app.use(express.json()); // parse url data (Make readable response)
 
 
 let posts = [{
+    id:uuidv4(),
     username: "parthiv",
     content: "i love power",
 },{
+    id:uuidv4(),
     username: "Raj",
     content: "i love GT650",
 },{
+    id:uuidv4(),
     username: "Ajay",
     content: "i love bullet-350",
     },
@@ -32,9 +36,32 @@ app.get("/posts/new", (req, res) => {
 });
 
 app.post("/posts", (req, res) => {
-    console.log(req.body);
-    res.send("post is working");
+    let {username, content} = req.body;
+    let id = uuidv4();
+    posts.push({id, username, content});
+    res.redirect("/posts")
 });
+
+app.get("/posts/:id",(req, res) =>{
+    let{id} = req.params;
+    console.log(id);
+    let post = posts.find((p) => id === p.id);
+    console.log(post);
+    // res.send("Request is working");
+    res.render("show.ejs", { post });
+});
+
+// update quary 
+
+app.patch("/posts/:id",(req,res)=>{
+    let {id} = req.params;
+    let newContent = req.body.content;
+    // console.log(newContent);
+    let post = posts.find((p)=> id === p.id);
+    post.content = newContent;
+    console.log(post);
+    res.send("Patch is working")
+})
 
 app.listen(port, () => {
     console.log("Listening on port 8080");
