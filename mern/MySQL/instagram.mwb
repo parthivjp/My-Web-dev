@@ -1,0 +1,125 @@
+create database instagram;
+use instagram;
+
+create table user (
+	id int,
+    age int,
+    name varchar(30) not null,
+    email varchar(50) unique,
+    followers int default 0,
+    following int,
+    constraint check(age>=13),
+    primary key (id)
+);
+
+INSERT INTO user(
+	id, age, name, email, followers, following
+    ) VALUES ( 105, 31, "Abhay", "abhay@gmail.com", 522, 1033),
+    ( 102, 37, "ravi", "ravi@gmail.com", 422, 333),
+    ( 103, 35, "Abhishek", "abhishek@gmail.com", 220, 433),
+    ( 104, 34, "Raj", "raj@gmail.com", 2220, 433);
+
+create table post (
+	id int primary key,
+    content varchar(50),
+    user_id int,
+    foreign key (user_id) references user(id)
+);
+drop table post;
+
+SELECT distinct ID, EMAIL, name from user;
+SELECT* from user;
+
+SELECT * FROM user WHERE Followers >= 450;
+
+SELECT  name, age, followers from user where age >= 31 AND FOLLOWERS >= 450;
+
+SELECT  name, age, followers from user where age >= 31 or FOLLOWERS >= 450;
+
+SELECT  name, age, followers from user where age between 31 AND 33;
+
+select * from user;
+select name, followers, email from user where email in ("ravi@gmail.com","abhishek@gmail.com","raj@gmail.com");
+
+select name, age, followers, email from user where age in (31,34);
+
+select name, age, followers, email from user where age not in (31,34);
+
+select name ,age, following from user where age > 30 limit 3;
+
+select name ,followers from user order by followers ASC;
+
+select name ,followers from user order by followers desc;
+
+select name ,age from user order by age ASC;
+
+select max(age) from user;
+
+SELECT avg(followers) FROM user;
+
+SELECT count(age) FROM USER WHERE age = 31;
+
+SELECT SUM(followers) FROM user;
+
+SELECT age,count(id) 
+FROM user 
+GROUP BY age;
+
+SELECT age, max(followers) 
+FROM user 
+GROUP BY age;
+
+SELECT age, max(followers) 
+FROM user 
+GROUP BY age
+HAVING max(followers) > 500;
+
+UPDATE user
+SET followers =700
+WHERE age = 31 AND name = "Abhay";
+
+select *FROM USER;
+
+DELETE from user
+WHERE age = 37;
+
+ALTER TABLE user
+ADD column City VARCHAR(15) default "DEROL";
+
+ALTER TABLE user
+DROP COLUMN city;
+
+SELECT *FROM user;
+
+ALTER TABLE user
+RENAME TO instauser;
+
+SELECT * FROM INSTAUSER;
+
+ALTER TABLE instauser
+RENAME TO user; 
+
+ALTER TABLE USER
+CHANGE column FOLLOWERS SUBS INT DEFAULT 0;
+
+SELECT * FROM USER;
+
+ALTER TABLE user 
+MODIFY subs int default 5;
+
+INSERT INTO user (
+id, age, name, email,  following) VALUES (202,30,"VIJAYRAJ", "vijay@gmail.com", 1); 
+
+
+select * from user ;
+SELECT * FROM POST;
+
+TRUNCATE table user;
+SELECT * from user;
+DROP TABLE USER;
+
+
+
+
+
+
