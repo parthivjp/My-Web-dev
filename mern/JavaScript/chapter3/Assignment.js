@@ -1,7 +1,7 @@
 //Q1
 
-// let firstN =[7,9,0,-2];
-// let n=3;
+// let firstN ="first love"; //[7,9,0,-2]
+// let n=8;
 // console.log(firstN.slice(0,n));
 
 
@@ -22,7 +22,7 @@
 //Q4
 // let my2 = prompt("Enter string");
 // let n=3;
-// if(  my2[n].toLowerCase() ==my2[n] ){
+// if(  my2[n].toLowerCase() == my2[n] ){
 //      console.log("string is in lower case");
 //      console.log(my2[n])
 //  }else{
@@ -37,10 +37,10 @@
 
 
 //Q6
-let arr2 = ["a","b","c","d",52,48,44,63,51,2,1];
-let element=6;
-if(arr2.indexOf(element)!=-1){
-    console.log("element is in array",element);
-} else {
-    console.log("element is not in array")
-}
+// let arr2 = ["a","b","c","d",52,48,44,63,51,2,1];
+// let element=63;
+// if(arr2.indexOf(element)!=-1){
+//     console.log("element is in array",element);
+// } else {
+//     console.log("element is not in array")
+// }

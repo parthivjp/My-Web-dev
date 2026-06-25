@@ -16,17 +16,16 @@
 // console.log(mystr.trim().toUpperCase());
 
 
-// let msgForYou="I amin Love with You ";
-// console.log(msgForYou.slice(1));  // ' amin Love with You '
-
+// let msgForYou="Hello world";
+// console.log(msgForYou.slice(1));  // 'ello world'
 
 // let msgForYou="I am in Love with You ";
 // console.log(msgForYou.slice(1,7)); //' am in'
 
 
 // let msgForYou="HelloIamVijay";
-// console.log(msgForYou.slice(-1));
+// console.log(msgForYou.slice(-5));//'Vijay'
 
 
-// let mdg = "ApnaCollege"
-// console.log(mdg.slice(4).replace("l","t"));
+// let msg = "ApnaCollege"
+// console.log(msg.slice(4).replace("l","t"));

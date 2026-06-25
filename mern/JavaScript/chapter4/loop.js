@@ -6,10 +6,6 @@
 //     console.log(j);
 // }
 
-// for(let i=0;i<=5;i++){
-//     console.log(i);
-// }
-
 // for(let i=15; i>=1; i=i-2){
 //     console.log(i);
 // }
@@ -27,7 +23,7 @@
 // No = parseInt(No);
 
 // for (let i = No; i<=No*10; i=i+No){
-//     console.log(i);
+//     console.log(No,i);
 // }
 
 // for(let i=1 ; i<= 3; i++){
@@ -62,7 +58,7 @@
 //     console.log("Guess id correct");
 // }
 
-let fruits=["Apple","banana","orange","pinapple"];
-for(let i =0 ; i<fruits.length; i++){
-    console.log(i,fruits[i]);
-}
+// let fruits=["Apple","banana","orange","pinapple"];
+// for(let i =0 ; i<fruits.length; i++){
+//     console.log(i,fruits[i]);
+// }

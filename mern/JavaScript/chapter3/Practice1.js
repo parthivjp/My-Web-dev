@@ -1,6 +1,7 @@
 // let myinput = prompt("Enter Your email");
 // let n="@";
-// if (myinput.indexOf(n) !==-1 ){ // myinput.indexOf(n) checks n where we have store @ , then not Equeal to -1 means @ is present in the string 
+// let m=".com"
+// if (myinput.indexOf(n) !==-1 && myinput.indexOf(m)!== -1){ // myinput.indexOf(n) checks n where we have store @ , then not Equeal to -1 means @ is present in the string 
 //     alert("Your email is in complete formate");
 // }else{
 //     alert("Your email is not in complete formate");
@@ -12,7 +13,8 @@
 // if (makeCapital.length > 0) {
 //     let A = makeCapital.slice(0,1).toLocaleUpperCase();
 //     let b = makeCapital.slice(1).toLocaleLowerCase();
-//     let ans = A.concat(b);// or also this work A+b
+//     // let ans = A.concat(b);
+//     let ans = A+b;// or also this work A+b
 //     {
 //         alert(ans)
 //     }
@@ -28,7 +30,7 @@
 //===================================================================================
 
 // let Bword = prompt("Enter your Sentence");
-// if (Bword.indexOf("dumb") !== -1){
+// if (Bword.indexOf("dumb") !== -1 ){
 //     let coverSentence = Bword.replace("dumb","*****");
 //     alert(coverSentence);
 // }else{
@@ -67,18 +69,28 @@
 
 // if (line.length >= 10){
 //     let nline=line.slice(0,line.length)+"..."; // i am working on my project 
-//     alert(nline);
+//     alert(nline); // i am working on my project... 
 // }else{
 //     alert("try something else");
 // }
 
 //==================================================================================
 
-// let newline=prompt("Enter your string");
-// let v=("a","e","i","o","u");
+// let newline = prompt("Enter your string");
 
-// if(newline.indexOf(v)!== -1){
-//     alert()
+// let vowels = ["a", "e", "i", "o", "u"];
+
+// let found = false;
+
+// for(let v of vowels){
+//     if(newline.indexOf(v) !== -1){
+//         found = true;
+//         break;
+//     }
+// }
+
+// if(found){
+//     alert("Vowel found!");
 // }else{
-
+//     alert("No vowel found!");
 // }
